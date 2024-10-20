@@ -1,0 +1,43 @@
+@import '../global/color.scss';
+
+.navbar {
+    // background-color: $primary-color;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+
+    h1 {
+        color: $secondary-color;
+    }
+
+    .navRight {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        justify-content: center;
+
+
+        .avatarContainer {
+            background-color: $card-color;
+            padding: 10px;
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            justify-content: center;
+
+            .avatarName {
+                color: $secondary-color;
+                display: flex;
+                flex-direction: column;
+                font-size: 1.1em;
+
+                span {
+                    font-size: 0.8em;
+                    color: $border-color;
+                    font-family: '--font-montserrat-regular';
+                }
+            }
+        }
+    }
+}

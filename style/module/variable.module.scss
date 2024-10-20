@@ -1,0 +1,12 @@
+$primary-color: #64ff00;
+
+.card {
+    // background-color: $primary-color; // SCSS variable usage in the SCSS file
+    width: 100%;
+    padding: 10px;
+
+    h1 {
+        color: #000;
+        font-family: var(--font-montserrat-regular);
+    }
+}
