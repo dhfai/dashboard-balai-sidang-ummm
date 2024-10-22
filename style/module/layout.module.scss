@@ -1,0 +1,15 @@
+@import '../global/color.scss';
+
+
+.container {
+    color: white;
+    min-height: 100vh;
+    display: flex;
+  }
+
+
+
+  .main {
+    width: 100%;
+    padding-right: 1rem;
+  }

@@ -1,5 +1,8 @@
 import localFont from "next/font/local";
 import "@/style/global/globals.scss";
+import styles from "@/style/module/layout.module.scss";
+import Navbar from "@/components/Navbar";
+import Sidebar from "@/components/Sidebar";
 
 const montserratRegular = localFont({
   src: "./fonts/Montserrat-Regular.ttf",
@@ -21,7 +24,13 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${montserratRegular.variable} ${montserratBold.variable}`}>
-        {children}
+        <div className={styles.container}>
+            <Sidebar />
+            <div className={styles.main}>
+                <Navbar />
+                {children}
+            </div>
+        </div>
       </body>
     </html>
   );

@@ -1,0 +1,20 @@
+.container {
+    display: flex;
+    // flex-wrap: wrap;
+    gap: 10px;
+    padding: 16px;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+.wrapper {
+    background-color: #151515;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    height: 100vh;
+}
+
+.wrapp {
+    max-width: 1300px;
+    margin: 0 auto;
+}

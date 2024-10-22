@@ -1,0 +1,43 @@
+@import '../global/color.scss';
+
+.tableContainer {
+    background-color: #009879;
+    width: 100%;
+    overflow-x: auto;
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'Arial', sans-serif;
+    background-color: $card-color;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+
+    th, td {
+      padding: 12px 15px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #009879;
+      color: #ffffff;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+    td {
+      color: #fff;
+      font-size: 0.9rem;
+    }
+
+    td:first-child {
+      font-weight: bold;
+    }
+
+    th:first-child, td:first-child {
+      border-bottom-left-radius: 10px;
+    }
+
+    th:last-child, td:last-child {
+      border-bottom-right-radius: 10px;
+    }
+  }
+}

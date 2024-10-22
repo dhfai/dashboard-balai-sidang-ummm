@@ -1,0 +1,11 @@
+@import '../global/color.scss';
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .callendar {
+        background-color: $card-color;
+        border-radius: 20px;
+    }
+}

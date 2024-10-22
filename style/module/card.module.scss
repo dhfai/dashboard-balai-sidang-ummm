@@ -1,0 +1,48 @@
+@import '../global/color.scss';
+
+.card {
+    border: 1px solid $border-color;
+    border-radius: 8px;
+    padding: 20px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: $card-color;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+
+    &:hover {
+        transform: scale(1.05);
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    }
+}
+
+.icon {
+    font-size: 18px;
+    color: #000;
+    margin-bottom: 16px;
+}
+
+.title {
+    color: #000;
+    font-size: 26px;
+    font-weight: bold;
+    // color: white;
+    margin-bottom: 10px;
+    font-family: var(--font-montserrat-regular);
+}
+
+.desc {
+    font-size: 18px;
+    color: #000;
+    font-family: var(--font-montserrat-regular);
+}
+
+
+@media (max-width: 768px) {
+    .card {
+        width: 100%;
+        padding: 15px;
+    }
+}
